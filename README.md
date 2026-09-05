@@ -63,9 +63,18 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Math
 |  |
 | ------- |
+| [0002-add-two-numbers](https://github.com/01Himanshuu/LeetCodes/tree/master/0002-add-two-numbers) |
 | [3875-construct-uniform-parity-array-i](https://github.com/01Himanshuu/LeetCodes/tree/master/3875-construct-uniform-parity-array-i) |
 ## Simulation
 |  |
 | ------- |
 | [2149-rearrange-array-elements-by-sign](https://github.com/01Himanshuu/LeetCodes/tree/master/2149-rearrange-array-elements-by-sign) |
+## Linked List
+|  |
+| ------- |
+| [0002-add-two-numbers](https://github.com/01Himanshuu/LeetCodes/tree/master/0002-add-two-numbers) |
+## Recursion
+|  |
+| ------- |
+| [0002-add-two-numbers](https://github.com/01Himanshuu/LeetCodes/tree/master/0002-add-two-numbers) |
 <!---LeetCode Topics End-->
