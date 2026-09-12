@@ -15,6 +15,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0169-majority-element](https://github.com/01Himanshuu/LeetCodes/tree/master/0169-majority-element) |
 | [0485-max-consecutive-ones](https://github.com/01Himanshuu/LeetCodes/tree/master/0485-max-consecutive-ones) |
 | [2149-rearrange-array-elements-by-sign](https://github.com/01Himanshuu/LeetCodes/tree/master/2149-rearrange-array-elements-by-sign) |
+| [3414-maximum-score-of-non-overlapping-intervals](https://github.com/01Himanshuu/LeetCodes/tree/master/3414-maximum-score-of-non-overlapping-intervals) |
 | [3483-unique-3-digit-even-numbers](https://github.com/01Himanshuu/LeetCodes/tree/master/3483-unique-3-digit-even-numbers) |
 | [3875-construct-uniform-parity-array-i](https://github.com/01Himanshuu/LeetCodes/tree/master/3875-construct-uniform-parity-array-i) |
 ## Bit Manipulation
@@ -38,6 +39,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0075-sort-colors](https://github.com/01Himanshuu/LeetCodes/tree/master/0075-sort-colors) |
 | [0169-majority-element](https://github.com/01Himanshuu/LeetCodes/tree/master/0169-majority-element) |
+| [3414-maximum-score-of-non-overlapping-intervals](https://github.com/01Himanshuu/LeetCodes/tree/master/3414-maximum-score-of-non-overlapping-intervals) |
 ## Quicksort
 |  |
 | ------- |
@@ -66,6 +68,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0115-distinct-subsequences](https://github.com/01Himanshuu/LeetCodes/tree/master/0115-distinct-subsequences) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/01Himanshuu/LeetCodes/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0940-distinct-subsequences-ii](https://github.com/01Himanshuu/LeetCodes/tree/master/0940-distinct-subsequences-ii) |
+| [3414-maximum-score-of-non-overlapping-intervals](https://github.com/01Himanshuu/LeetCodes/tree/master/3414-maximum-score-of-non-overlapping-intervals) |
 ## Math
 |  |
 | ------- |
@@ -114,4 +117,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [3483-unique-3-digit-even-numbers](https://github.com/01Himanshuu/LeetCodes/tree/master/3483-unique-3-digit-even-numbers) |
+## Binary Search
+|  |
+| ------- |
+| [3414-maximum-score-of-non-overlapping-intervals](https://github.com/01Himanshuu/LeetCodes/tree/master/3414-maximum-score-of-non-overlapping-intervals) |
 <!---LeetCode Topics End-->
