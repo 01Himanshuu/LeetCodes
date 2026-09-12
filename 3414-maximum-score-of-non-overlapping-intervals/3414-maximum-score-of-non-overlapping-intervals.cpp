@@ -2,27 +2,47 @@ class Solution {
 public:
     vector<int> maximumWeight(vector<vector<int>>& intervals) {
         int n = intervals.size();
-        vector<int> order(n);
-        iota(order.begin(), order.end(), 0);
-        sort(order.begin(), order.end(), [&](int a, int b) { return intervals[a][1] < intervals[b][1]; });
-        vector<int> rights(n);
-        for (int p = 0; p < n; ++p) rights[p] = intervals[order[p]][1];
-
-        using State = pair<long long, vector<int>>;
-        vector<State> prev(n + 1, {0, {}});  // k = 0: nothing picked
-        for (int k = 0; k < 4; ++k) {
-            vector<State> cur(n + 1, {0, {}});
-            for (int p = 1; p <= n; ++p) {
-                int i = order[p - 1];  // take next interval
-                int l = intervals[i][0], w = intervals[i][2];
-                int j = lower_bound(rights.begin(), rights.end(), l) - rights.begin();  // intervals ending before l
-                State take = prev[j];
-                take.first -= w;  // scores kept negative
-                take.second.insert(upper_bound(take.second.begin(), take.second.end(), i), i);
-                cur[p] = min(take, cur[p - 1]);  // min = best score, then lex smallest
-            }
-            prev = move(cur);
+        vector<tuple<int, int, int, int>> arr;
+        for (int i = 0; i < n; i++) {
+            int l = intervals[i][0], r = intervals[i][1],
+                weight = intervals[i][2];
+            arr.emplace_back(l, r, weight, i);
         }
-        return prev[n].second;
+        // Sort by right endpoint.
+        sort(arr.begin(), arr.end(),
+             [](auto&& a, auto&& b) { return get<1>(a) < get<1>(b); });
+
+        vector<vector<long long>> dp(n + 1, vector<long long>(5));
+        vector<vector<vector<int>>> indices(n + 1, vector<vector<int>>(5));
+        for (int i = 0; i < n; i++) {
+            auto [l, r, weight, idx] = arr[i];
+            // Use binary search to find intervals whose right endpoints are
+            // smaller than l.
+            int k = lower_bound(arr.begin(), arr.begin() + i, l,
+                                [](const tuple<int, int, int, int>& t,
+                                   int val) { return get<1>(t) < val; }) -
+                    arr.begin();
+
+            for (int j = 1; j < 5; j++) {
+                long long s1 = dp[i][j];
+                long long s2 = dp[k][j - 1] + weight;
+                if (s1 > s2) {
+                    dp[i + 1][j] = dp[i][j];
+                    indices[i + 1][j] = indices[i][j];
+                    continue;
+                }
+
+                vector<int> newIndex = indices[k][j - 1];
+                newIndex.push_back(idx);
+                sort(newIndex.begin(), newIndex.end());
+                if (s1 == s2 && indices[i][j] < newIndex) {
+                    newIndex = indices[i][j];
+                }
+                dp[i + 1][j] = s2;
+                indices[i + 1][j] = newIndex;
+            }
+        }
+
+        return indices[n][4];
     }
 };
