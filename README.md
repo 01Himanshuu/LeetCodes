@@ -14,6 +14,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0136-single-number](https://github.com/01Himanshuu/LeetCodes/tree/master/0136-single-number) |
 | [0169-majority-element](https://github.com/01Himanshuu/LeetCodes/tree/master/0169-majority-element) |
 | [0485-max-consecutive-ones](https://github.com/01Himanshuu/LeetCodes/tree/master/0485-max-consecutive-ones) |
+| [0560-subarray-sum-equals-k](https://github.com/01Himanshuu/LeetCodes/tree/master/0560-subarray-sum-equals-k) |
 | [0835-image-overlap](https://github.com/01Himanshuu/LeetCodes/tree/master/0835-image-overlap) |
 | [2149-rearrange-array-elements-by-sign](https://github.com/01Himanshuu/LeetCodes/tree/master/2149-rearrange-array-elements-by-sign) |
 | [3414-maximum-score-of-non-overlapping-intervals](https://github.com/01Himanshuu/LeetCodes/tree/master/3414-maximum-score-of-non-overlapping-intervals) |
@@ -28,6 +29,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0001-two-sum](https://github.com/01Himanshuu/LeetCodes/tree/master/0001-two-sum) |
 | [0169-majority-element](https://github.com/01Himanshuu/LeetCodes/tree/master/0169-majority-element) |
+| [0560-subarray-sum-equals-k](https://github.com/01Himanshuu/LeetCodes/tree/master/0560-subarray-sum-equals-k) |
 | [3483-unique-3-digit-even-numbers](https://github.com/01Himanshuu/LeetCodes/tree/master/3483-unique-3-digit-even-numbers) |
 ## Two Pointers
 |  |
@@ -123,4 +125,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [3414-maximum-score-of-non-overlapping-intervals](https://github.com/01Himanshuu/LeetCodes/tree/master/3414-maximum-score-of-non-overlapping-intervals) |
+## Prefix Sum
+|  |
+| ------- |
+| [0560-subarray-sum-equals-k](https://github.com/01Himanshuu/LeetCodes/tree/master/0560-subarray-sum-equals-k) |
 <!---LeetCode Topics End-->
