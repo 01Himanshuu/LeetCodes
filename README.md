@@ -14,6 +14,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0136-single-number](https://github.com/01Himanshuu/LeetCodes/tree/master/0136-single-number) |
 | [0169-majority-element](https://github.com/01Himanshuu/LeetCodes/tree/master/0169-majority-element) |
 | [0485-max-consecutive-ones](https://github.com/01Himanshuu/LeetCodes/tree/master/0485-max-consecutive-ones) |
+| [0835-image-overlap](https://github.com/01Himanshuu/LeetCodes/tree/master/0835-image-overlap) |
 | [2149-rearrange-array-elements-by-sign](https://github.com/01Himanshuu/LeetCodes/tree/master/2149-rearrange-array-elements-by-sign) |
 | [3414-maximum-score-of-non-overlapping-intervals](https://github.com/01Himanshuu/LeetCodes/tree/master/3414-maximum-score-of-non-overlapping-intervals) |
 | [3483-unique-3-digit-even-numbers](https://github.com/01Himanshuu/LeetCodes/tree/master/3483-unique-3-digit-even-numbers) |
@@ -101,6 +102,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0048-rotate-image](https://github.com/01Himanshuu/LeetCodes/tree/master/0048-rotate-image) |
 | [0054-spiral-matrix](https://github.com/01Himanshuu/LeetCodes/tree/master/0054-spiral-matrix) |
+| [0835-image-overlap](https://github.com/01Himanshuu/LeetCodes/tree/master/0835-image-overlap) |
 ## Tree
 |  |
 | ------- |
