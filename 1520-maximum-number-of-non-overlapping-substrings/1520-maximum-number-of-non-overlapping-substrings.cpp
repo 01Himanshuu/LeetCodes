@@ -1,45 +1,54 @@
 class Solution {
 public:
+    struct Seg {
+        int left, right;
+        bool operator<(const Seg& rhs) const {
+            if (right == rhs.right) {
+                return left > rhs.left;
+            }
+            return right < rhs.right;
+        }
+    };
+
     vector<string> maxNumOfSubstrings(string s) {
-        int n = s.size();
-        vector<int> l(26, n), r(26);
-
-        for (int i = 0; i < n; i++) {
-            l[s[i] - 'a'] = min(l[s[i] - 'a'], i);
-            r[s[i] - 'a'] = i;
+        vector<Seg> seg(26, (Seg){-1, -1});
+        // Preprocess the left and right endpoints.
+        for (int i = 0; i < s.length(); ++i) {
+            int charIdx = s[i] - 'a';
+            if (seg[charIdx].left == -1) {
+                seg[charIdx].left = seg[charIdx].right = i;
+            } else {
+                seg[charIdx].right = i;
+            }
         }
-
-        vector<pair<int, int>> v;
-
-        for (int i = 0; i < n; i++) {
-            if (i != l[s[i] - 'a']) continue;
-
-            int e = r[s[i] - 'a'];
-            bool ok = true;
-
-            for (int j = i; j <= e; j++) {
-                if (l[s[j] - 'a'] < i) {
-                    ok = false;
-                    break;
+        for (int i = 0; i < 26; ++i) {
+            if (seg[i].left != -1) {
+                for (int j = seg[i].left; j <= seg[i].right; ++j) {
+                    int charIdx = s[j] - 'a';
+                    if (seg[i].left <= seg[charIdx].left &&
+                        seg[charIdx].right <= seg[i].right) {
+                        continue;
+                    }
+                    seg[i].left = min(seg[i].left, seg[charIdx].left);
+                    seg[i].right = max(seg[i].right, seg[charIdx].right);
+                    j = seg[i].left;
                 }
-                e = max(e, r[s[j] - 'a']);
             }
-
-            if (ok) v.push_back({e, i});
         }
-
-        sort(v.begin(), v.end());
-
+        // Greedily select intervals.
+        sort(seg.begin(), seg.end());
         vector<string> ans;
-        int p = -1;
-
-        for (auto [e, b] : v) {
-            if (b > p) {
-                ans.push_back(s.substr(b, e - b + 1));
-                p = e;
+        int end = -1;
+        for (auto& segment : seg) {
+            int left = segment.left, right = segment.right;
+            if (left == -1) {
+                continue;
+            }
+            if (end == -1 || left > end) {
+                end = right;
+                ans.emplace_back(s.substr(left, right - left + 1));
             }
         }
-
         return ans;
     }
 };
