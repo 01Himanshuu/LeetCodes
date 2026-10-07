@@ -10,6 +10,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0053-maximum-subarray](https://github.com/01Himanshuu/LeetCodes/tree/master/0053-maximum-subarray) |
 | [0054-spiral-matrix](https://github.com/01Himanshuu/LeetCodes/tree/master/0054-spiral-matrix) |
 | [0075-sort-colors](https://github.com/01Himanshuu/LeetCodes/tree/master/0075-sort-colors) |
+| [0118-pascals-triangle](https://github.com/01Himanshuu/LeetCodes/tree/master/0118-pascals-triangle) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/01Himanshuu/LeetCodes/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0136-single-number](https://github.com/01Himanshuu/LeetCodes/tree/master/0136-single-number) |
 | [0169-majority-element](https://github.com/01Himanshuu/LeetCodes/tree/master/0169-majority-element) |
@@ -86,6 +87,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0032-longest-valid-parentheses](https://github.com/01Himanshuu/LeetCodes/tree/master/0032-longest-valid-parentheses) |
 | [0053-maximum-subarray](https://github.com/01Himanshuu/LeetCodes/tree/master/0053-maximum-subarray) |
 | [0115-distinct-subsequences](https://github.com/01Himanshuu/LeetCodes/tree/master/0115-distinct-subsequences) |
+| [0118-pascals-triangle](https://github.com/01Himanshuu/LeetCodes/tree/master/0118-pascals-triangle) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/01Himanshuu/LeetCodes/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0678-valid-parenthesis-string](https://github.com/01Himanshuu/LeetCodes/tree/master/0678-valid-parenthesis-string) |
 | [0940-distinct-subsequences-ii](https://github.com/01Himanshuu/LeetCodes/tree/master/0940-distinct-subsequences-ii) |
