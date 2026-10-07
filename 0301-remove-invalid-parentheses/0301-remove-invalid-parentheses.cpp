@@ -1,26 +1,35 @@
 class Solution {
+    vector<string> ans;
+
+    void dfs(string s, int start, int last, char open, char close){
+        int balance = 0;
+
+        for(int i = start; i<s.size(); i++){
+            if(s[i] == open) balance++;
+            if(s[i] == close) balance--;
+
+            if(balance >= 0) continue;
+
+            for(int j = last; j<=i; j++){
+                if(s[j] == close && (j==last || s[j-1] != close)){
+                    dfs(s.substr(0, j) + s.substr(j+1), i, j, open, close);
+                }
+            }
+
+            return;
+        }
+
+        reverse(s.begin(), s.end());
+
+        if(open=='('){
+            dfs(s, 0, 0, ')', '(');
+        }else{
+            ans.push_back(s);
+        }
+    }
 public:
     vector<string> removeInvalidParentheses(string s) {
-        unordered_set<string> q{s}, vis{s};
-        vector<string> ans;
-        while (1) {
-            for (auto &x:q) {
-                int b=0;
-                for(char c:x) {
-                    if(c=='(') b++;
-                    else if(c==')' && --b<0) { b=-1; break; }
-                }
-                if(!b) ans.push_back(x);
-            }
-            if(ans.size()) return ans;
-            unordered_set<string> nq;
-            for(auto &x:q)
-                for(int i=0;i<x.size();i++)
-                    if(x[i]=='('||x[i]==')') {
-                        string y=x.substr(0,i)+x.substr(i+1);
-                        if(vis.insert(y).second) nq.insert(y);
-                    }
-            q=nq;
-        }
+        dfs(s, 0, 0, '(', ')');
+        return ans;
     }
 };
