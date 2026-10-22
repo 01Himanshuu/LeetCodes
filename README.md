@@ -15,6 +15,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/01Himanshuu/LeetCodes/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0136-single-number](https://github.com/01Himanshuu/LeetCodes/tree/master/0136-single-number) |
 | [0169-majority-element](https://github.com/01Himanshuu/LeetCodes/tree/master/0169-majority-element) |
+| [0217-contains-duplicate](https://github.com/01Himanshuu/LeetCodes/tree/master/0217-contains-duplicate) |
 | [0485-max-consecutive-ones](https://github.com/01Himanshuu/LeetCodes/tree/master/0485-max-consecutive-ones) |
 | [0560-subarray-sum-equals-k](https://github.com/01Himanshuu/LeetCodes/tree/master/0560-subarray-sum-equals-k) |
 | [0835-image-overlap](https://github.com/01Himanshuu/LeetCodes/tree/master/0835-image-overlap) |
@@ -50,6 +51,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0001-two-sum](https://github.com/01Himanshuu/LeetCodes/tree/master/0001-two-sum) |
 | [0169-majority-element](https://github.com/01Himanshuu/LeetCodes/tree/master/0169-majority-element) |
+| [0217-contains-duplicate](https://github.com/01Himanshuu/LeetCodes/tree/master/0217-contains-duplicate) |
 | [0560-subarray-sum-equals-k](https://github.com/01Himanshuu/LeetCodes/tree/master/0560-subarray-sum-equals-k) |
 | [1096-brace-expansion-ii](https://github.com/01Himanshuu/LeetCodes/tree/master/1096-brace-expansion-ii) |
 | [1477-find-two-non-overlapping-sub-arrays-each-with-target-sum](https://github.com/01Himanshuu/LeetCodes/tree/master/1477-find-two-non-overlapping-sub-arrays-each-with-target-sum) |
@@ -73,6 +75,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0075-sort-colors](https://github.com/01Himanshuu/LeetCodes/tree/master/0075-sort-colors) |
 | [0169-majority-element](https://github.com/01Himanshuu/LeetCodes/tree/master/0169-majority-element) |
+| [0217-contains-duplicate](https://github.com/01Himanshuu/LeetCodes/tree/master/0217-contains-duplicate) |
 | [1096-brace-expansion-ii](https://github.com/01Himanshuu/LeetCodes/tree/master/1096-brace-expansion-ii) |
 | [1520-maximum-number-of-non-overlapping-substrings](https://github.com/01Himanshuu/LeetCodes/tree/master/1520-maximum-number-of-non-overlapping-substrings) |
 | [2089-find-target-indices-after-sorting-array](https://github.com/01Himanshuu/LeetCodes/tree/master/2089-find-target-indices-after-sorting-array) |
