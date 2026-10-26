@@ -19,6 +19,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0485-max-consecutive-ones](https://github.com/01Himanshuu/LeetCodes/tree/master/0485-max-consecutive-ones) |
 | [0560-subarray-sum-equals-k](https://github.com/01Himanshuu/LeetCodes/tree/master/0560-subarray-sum-equals-k) |
 | [0835-image-overlap](https://github.com/01Himanshuu/LeetCodes/tree/master/0835-image-overlap) |
+| [1254-number-of-closed-islands](https://github.com/01Himanshuu/LeetCodes/tree/master/1254-number-of-closed-islands) |
 | [1477-find-two-non-overlapping-sub-arrays-each-with-target-sum](https://github.com/01Himanshuu/LeetCodes/tree/master/1477-find-two-non-overlapping-sub-arrays-each-with-target-sum) |
 | [1569-number-of-ways-to-reorder-array-to-get-same-bst](https://github.com/01Himanshuu/LeetCodes/tree/master/1569-number-of-ways-to-reorder-array-to-get-same-bst) |
 | [1658-minimum-operations-to-reduce-x-to-zero](https://github.com/01Himanshuu/LeetCodes/tree/master/1658-minimum-operations-to-reduce-x-to-zero) |
@@ -190,6 +191,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0048-rotate-image](https://github.com/01Himanshuu/LeetCodes/tree/master/0048-rotate-image) |
 | [0054-spiral-matrix](https://github.com/01Himanshuu/LeetCodes/tree/master/0054-spiral-matrix) |
 | [0835-image-overlap](https://github.com/01Himanshuu/LeetCodes/tree/master/0835-image-overlap) |
+| [1254-number-of-closed-islands](https://github.com/01Himanshuu/LeetCodes/tree/master/1254-number-of-closed-islands) |
 | [2267-check-if-there-is-a-valid-parentheses-string-path](https://github.com/01Himanshuu/LeetCodes/tree/master/2267-check-if-there-is-a-valid-parentheses-string-path) |
 | [3619-count-islands-with-total-value-divisible-by-k](https://github.com/01Himanshuu/LeetCodes/tree/master/3619-count-islands-with-total-value-divisible-by-k) |
 ## Tree
@@ -200,6 +202,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Depth-First Search
 |  |
 | ------- |
+| [1254-number-of-closed-islands](https://github.com/01Himanshuu/LeetCodes/tree/master/1254-number-of-closed-islands) |
 | [2265-count-nodes-equal-to-average-of-subtree](https://github.com/01Himanshuu/LeetCodes/tree/master/2265-count-nodes-equal-to-average-of-subtree) |
 | [3619-count-islands-with-total-value-divisible-by-k](https://github.com/01Himanshuu/LeetCodes/tree/master/3619-count-islands-with-total-value-divisible-by-k) |
 ## Binary Tree
@@ -284,6 +287,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0301-remove-invalid-parentheses](https://github.com/01Himanshuu/LeetCodes/tree/master/0301-remove-invalid-parentheses) |
 | [1096-brace-expansion-ii](https://github.com/01Himanshuu/LeetCodes/tree/master/1096-brace-expansion-ii) |
+| [1254-number-of-closed-islands](https://github.com/01Himanshuu/LeetCodes/tree/master/1254-number-of-closed-islands) |
 | [3619-count-islands-with-total-value-divisible-by-k](https://github.com/01Himanshuu/LeetCodes/tree/master/3619-count-islands-with-total-value-divisible-by-k) |
 ## Bracket Sequences
 |  |
@@ -312,6 +316,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Union-Find
 |  |
 | ------- |
+| [1254-number-of-closed-islands](https://github.com/01Himanshuu/LeetCodes/tree/master/1254-number-of-closed-islands) |
 | [1569-number-of-ways-to-reorder-array-to-get-same-bst](https://github.com/01Himanshuu/LeetCodes/tree/master/1569-number-of-ways-to-reorder-array-to-get-same-bst) |
 | [3619-count-islands-with-total-value-divisible-by-k](https://github.com/01Himanshuu/LeetCodes/tree/master/3619-count-islands-with-total-value-divisible-by-k) |
 ## Binary Search Tree
