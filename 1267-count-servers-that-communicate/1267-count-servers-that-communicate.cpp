@@ -1,26 +1,36 @@
+#include <vector>
+
 class Solution {
 public:
-    int countServers(vector<vector<int>>& grid) {
-        int m = grid.size();
-        int n = grid[0].size();
-        vector<int> row(m, 0);
-        vector<int> col(n, 0);
-        for (int i = 0; i < m; i++) {
-            for (int j = 0; j < n; j++) {
+    int countServers(std::vector<std::vector<int>>& grid) {
+        int rows = grid.size();
+        int cols = grid[0].size();
+        
+        std::vector<int> rowCount(rows, 0);
+        std::vector<int> colCount(cols, 0);
+        
+        // 1. Count servers in each row and column
+        for (int i = 0; i < rows; ++i) {
+            for (int j = 0; j < cols; ++j) {
                 if (grid[i][j] == 1) {
-                    row[i]++;
-                    col[j]++;
+                    rowCount[i]++;
+                    colCount[j]++;
                 }
             }
         }
-        int ans = 0;
-        for (int i = 0; i < m; i++) {
-            for (int j = 0; j < n; j++) {
-                if (grid[i][j] == 1 && (row[i] > 1 || col[j] > 1)) {
-                    ans++;
+        
+        // 2. Count servers that have at least one partner in their row or column
+        int communicatingServers = 0;
+        for (int i = 0; i < rows; ++i) {
+            for (int j = 0; j < cols; ++j) {
+                if (grid[i][j] == 1) {
+                    if (rowCount[i] > 1 || colCount[j] > 1) {
+                        communicatingServers++;
+                    }
                 }
             }
         }
-        return ans;
+        
+        return communicatingServers;
     }
 };
