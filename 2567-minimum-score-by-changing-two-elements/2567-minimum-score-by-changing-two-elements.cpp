@@ -1,9 +1,16 @@
 class Solution {
 public:
     int minimizeSum(vector<int>& nums) {
-        array<int, 3> small, large;
-        ranges::partial_sort_copy(nums, small);  // the 3 smallest, ascending
-        ranges::partial_sort_copy(nums, large, greater{});  // the 3 largest, descending
-        return min({large[0] - small[2], large[1] - small[1], large[2] - small[0]});
+        int s1 = INT_MAX, s2 = INT_MAX, s3 = INT_MAX, l1 = 0, l2 = 0, l3 = 0;
+        for(auto n: nums){
+            if(s1 > n) { s3 = s2; s2 = s1; s1 = n; }
+            else if(s2 > n) { s3 = s2; s2 = n; }
+            else if(s3 > n) { s3 = n; }
+
+            if(l1 < n) { l3 = l2; l2  = l1; l1 = n; }
+            else if(l2 < n ) { l3 = l2; l2 = n; }
+            else if(l3 < n ) { l3 = n; }
+        }
+        return min({l1 - s3, l3 - s1, l2 - s2});
     }
 };
